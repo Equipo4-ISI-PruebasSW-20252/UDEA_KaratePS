@@ -3,7 +3,7 @@ name: Maven Build and Karate Test
 on:
   push:
     branches:
-      - main
+      - main, develop
 
 jobs:
   build-and-test:
