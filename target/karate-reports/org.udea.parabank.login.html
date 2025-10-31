@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.identify("e2962acf-e5bc-4911-8806-314d18c06316",{name:"famil"});
+    posthog.identify("4eaa53e5-35aa-44c6-bae5-88c117a21143",{name:"jonathangr"});
     posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
   }
 });
@@ -44,13 +44,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     </div>
   </div>
   <div id="nav-env">
-    <div></div>
+    <div>prod</div>
   </div>
   <div id="nav-type">
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-10-28 10:49:00 a. m.</div>
+    <div>2025-10-30 04:58:57 p. m.</div>
   </div>
 </div>
 
@@ -85,7 +85,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1084</span>
+              <span>ms:</span>&nbsp;<span>290</span>
             </div>
           </div>
           <div class="step-row">
@@ -248,7 +248,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">1083</div>
+    <div class="time-cell passed">288</div>
   </div>
 
    
@@ -257,34 +257,25 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.12">10:48:58.255 request:
-1 &gt; GET http://parabank.parasoft.com/parabank/services/bank/login/john/demo
+  <div class="preformatted" data-parent="0.12">16:58:57.256 request:
+1 &gt; GET https://parabank.parasoft.com/parabank/services/bank/login/john/demo
 1 &gt; Accept: application/json
 1 &gt; Host: parabank.parasoft.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.16)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.8)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-10:48:58.724 request:
-2 &gt; GET http://parabank.parasoft.com/parabank/services/bank/login/john/demo
-2 &gt; Accept: application/json
-2 &gt; Host: parabank.parasoft.com
-2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.16)
-2 &gt; Accept-Encoding: gzip,deflate
-
-
-10:48:59.337 response time in milliseconds: 613
-2 &lt; 200
-2 &lt; Date: Tue, 28 Oct 2025 15:49:01 GMT
-2 &lt; Content-Type: application/json
-2 &lt; Transfer-Encoding: chunked
-2 &lt; Connection: keep-alive
-2 &lt; Server: cloudflare
-2 &lt; cf-cache-status: DYNAMIC
-2 &lt; X-Content-Type-Options: nosniff
-2 &lt; CF-RAY: 995b94a8bf66f1ca-EZE
+16:58:57.543 response time in milliseconds: 286
+1 &lt; 200
+1 &lt; Date: Thu, 30 Oct 2025 21:58:57 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Server: cloudflare
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; CF-RAY: 996e2d50e85b74a8-MIA
 {&quot;id&quot;:12212,&quot;firstName&quot;:&quot;John&quot;,&quot;lastName&quot;:&quot;Smith&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;1431 Main St&quot;,&quot;city&quot;:&quot;Beverly Hills&quot;,&quot;state&quot;:&quot;CA&quot;,&quot;zipCode&quot;:&quot;90210&quot;},&quot;phoneNumber&quot;:&quot;310-447-4121&quot;,&quot;ssn&quot;:&quot;622-11-9999&quot;}
 
 </div>   
@@ -375,7 +366,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1111</span>
+              <span>ms:</span>&nbsp;<span>221</span>
             </div>
           </div>
           <div class="step-row">
@@ -538,7 +529,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">1110</div>
+    <div class="time-cell passed">220</div>
   </div>
 
    
@@ -547,34 +538,25 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.35">10:48:59.344 request:
-1 &gt; GET http://parabank.parasoft.com/parabank/services/bank/login/john/wrongpass
+  <div class="preformatted" data-parent="0.35">16:58:57.551 request:
+1 &gt; GET https://parabank.parasoft.com/parabank/services/bank/login/john/wrongpass
 1 &gt; Accept: application/json
 1 &gt; Host: parabank.parasoft.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.16)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.8)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-10:48:59.844 request:
-2 &gt; GET http://parabank.parasoft.com/parabank/services/bank/login/john/wrongpass
-2 &gt; Accept: application/json
-2 &gt; Host: parabank.parasoft.com
-2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.16)
-2 &gt; Accept-Encoding: gzip,deflate
-
-
-10:49:00.452 response time in milliseconds: 608
-2 &lt; 400
-2 &lt; Date: Tue, 28 Oct 2025 15:49:02 GMT
-2 &lt; Content-Type: text/plain;charset=UTF-8
-2 &lt; Content-Length: 32
-2 &lt; Connection: keep-alive
-2 &lt; Server: cloudflare
-2 &lt; cf-cache-status: DYNAMIC
-2 &lt; X-Content-Type-Options: nosniff
-2 &lt; CF-RAY: 995b94afb8251e8e-EZE
+16:58:57.770 response time in milliseconds: 218
+1 &lt; 400
+1 &lt; Date: Thu, 30 Oct 2025 21:58:57 GMT
+1 &lt; Content-Type: text/plain;charset=UTF-8
+1 &lt; Content-Length: 32
+1 &lt; Connection: keep-alive
+1 &lt; Server: cloudflare
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; CF-RAY: 996e2d5268bdb3d9-MIA
 Invalid username and/or password
 
 </div>   
@@ -624,7 +606,7 @@ Invalid username and/or password
         <span>And</span>&nbsp;<span>match response == &#39;Invalid username and/or password&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
