@@ -50,13 +50,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-11-13 08:30:49 p. m.</div>
+    <div>2025-11-13 08:47:14 p. m.</div>
   </div>
 </div>
 
         <div class="nav-container">
           <div class="nav-item failed">
-            <a href="#[1:10]"><span>[1:10]</span> <span>Payment failed due to insufficient funds</span></a>
+            <a href="#[1:15]"><span>[1:15]</span> <span>Payment failed due to insufficient funds</span></a>
           </div>
         </div>
       </div>
@@ -70,29 +70,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:10]">
+          <div class="scenario-heading" id="[1:15]">
             <div class="heading-container">
               <div class="scenario-tags">
                 <a class="badge badge-primary" href="karate-tags.html">parabank_billpay</a>
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:10]</span>
+                Scenario: <span>[1:15]</span>
                 <span class="scenario-name">Payment failed due to insufficient funds</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>370</span>
+              <span>ms:</span>&nbsp;<span>538</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:10]bg">
+            <div class="step-container" id="[1:15]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:10]bg"><div>
+          <div data-parent="[1:15]bg"><div>
   
 
   
@@ -102,10 +102,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url &#39;https://parabank.parasoft.com/parabank/services/bank&#39;</span>
+        <span>*</span>&nbsp;<span>url baseUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -120,7 +120,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1:10]bg"><div>
+          <div data-parent="[1:15]bg"><div>
   
 
   
@@ -148,7 +148,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1:10]bg"><div>
+          <div data-parent="[1:15]bg"><div>
   
 
   
@@ -156,6 +156,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   <div class="step-row">
     <div class="step-container" id="0.7">
       <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def fakerObj = new faker()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">30</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def fromAccountId = 13122</span>
@@ -176,20 +204,76 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1:10]bg"><div>
+          <div data-parent="[1:15]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.8">
-      <div class="step-ref bg-step">8</div>
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def insufficientAmount = 1000000</span>
+        <span>*</span>&nbsp;<span>def fromAccountId = &#39;12345&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def insufficientAmount = fakerObj.number().numberBetween(100000, 900000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def negative_amount = fakerObj.number().numberBetween(-200, -1)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -210,8 +294,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.11">
-      <div class="step-ref passed">11</div>
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;billpay&#39;</span>
@@ -238,8 +322,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.12">
-      <div class="step-ref passed">12</div>
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>param accountId = fromAccountId</span>
@@ -266,8 +350,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.13">
-      <div class="step-ref passed">13</div>
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>param amount = insufficientAmount</span>
@@ -294,28 +378,28 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.14">
-      <div class="step-ref passed">14</div>
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>request</span>
       </div>
     </div>
-    <div class="time-cell passed">14</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.14">{
-  &quot;name&quot;: &quot;Pago de prueba&quot;,
-  &quot;address&quot;: {
-    &quot;street&quot;: &quot;direccion de prueba&quot;,
-    &quot;city&quot;: &quot;Medellin&quot;,
-    &quot;state&quot;: &quot;Antioquia&quot;,
-    &quot;zipCode&quot;: &quot;5002&quot;
-  },
-  &quot;phoneNumber&quot;: &quot;3333333333333&quot;,
-  &quot;accountNumber&quot;: &quot;13344&quot;
+  <div class="preformatted" data-parent="0.19">{
+    &quot;name&quot;: &quot;Pago de prueba&quot;,
+    &quot;address&quot;: {
+        &quot;street&quot;: &quot;direccion de prueba&quot;,
+        &quot;city&quot;: &quot;Medellin&quot;,
+        &quot;state&quot;: &quot;Antioquia&quot;,
+        &quot;zipCode&quot;: &quot;5002&quot;
+    },
+    &quot;phoneNumber&quot;: &quot;3333333333333&quot;,
+    &quot;accountNumber&quot;: &quot;13344&quot;
 }</div>
 
   
@@ -332,14 +416,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.28">
-      <div class="step-ref passed">28</div>
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">350</div>
+    <div class="time-cell passed">491</div>
   </div>
 
    
@@ -348,8 +432,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.28">20:30:48.965 request:
-1 &gt; POST https://parabank.parasoft.com/parabank/services/bank/billpay?accountId=13122&amp;amount=1000000
+  <div class="preformatted" data-parent="0.33">20:47:14.467 request:
+1 &gt; POST https://parabank.parasoft.com/parabank/services/bank/billpay?accountId=12345&amp;amount=711854
 1 &gt; Accept: application/json
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 177
@@ -359,17 +443,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;name&quot;:&quot;Pago de prueba&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;direccion de prueba&quot;,&quot;city&quot;:&quot;Medellin&quot;,&quot;state&quot;:&quot;Antioquia&quot;,&quot;zipCode&quot;:&quot;5002&quot;},&quot;phoneNumber&quot;:&quot;3333333333333&quot;,&quot;accountNumber&quot;:&quot;13344&quot;}
 
-20:30:49.278 response time in milliseconds: 313
+20:47:14.921 response time in milliseconds: 453
 1 &lt; 200
-1 &lt; Date: Fri, 14 Nov 2025 01:30:49 GMT
+1 &lt; Date: Fri, 14 Nov 2025 01:47:14 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; Server: cloudflare
 1 &lt; cf-cache-status: DYNAMIC
 1 &lt; X-Content-Type-Options: nosniff
-1 &lt; CF-RAY: 99e2bee92a6f5022-MIA
-{&quot;payeeName&quot;:&quot;Pago de prueba&quot;,&quot;amount&quot;:1000000,&quot;accountId&quot;:13122}
+1 &lt; CF-RAY: 99e2d6f88e3831d7-MIA
+{&quot;payeeName&quot;:&quot;Pago de prueba&quot;,&quot;amount&quot;:711854,&quot;accountId&quot;:12345}
 
 </div>   
 
@@ -383,14 +467,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.29">
-      <div class="step-ref failed">29</div>
+    <div class="step-container" id="0.34">
+      <div class="step-ref failed">34</div>
       
       <div class="step-cell failed">
-        <span>Then</span>&nbsp;<span>assert responseStatus == 400 || responseStatus == 422</span>
+        <span>Then</span>&nbsp;<span>match [400, 422] contains responseStatus</span>
       </div>
     </div>
-    <div class="time-cell failed">3</div>
+    <div class="time-cell failed">5</div>
   </div>
 
    
@@ -399,10 +483,22 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.29">20:30:49.283 classpath:org/udea/parabank/paymentFailed.feature:29
-Then assert responseStatus == 400 || responseStatus == 422
-did not evaluate to &#39;true&#39;: responseStatus == 400 || responseStatus == 422
-classpath:org/udea/parabank/paymentFailed.feature:29
+  <div class="preformatted" data-parent="0.34">20:47:14.929 classpath:org/udea/parabank/paymentFailed.feature:34
+Then match [400, 422] contains responseStatus
+match failed: CONTAINS
+  $ | actual does not contain expected | actual array does not contain expected item - 200 (LIST:NUMBER)
+  [400,422]
+  200
+
+    $[1] | not equal (NUMBER:NUMBER)
+    422
+    200
+
+    $[0] | not equal (NUMBER:NUMBER)
+    400
+    200
+
+classpath:org/udea/parabank/paymentFailed.feature:34
 </div>   
 
   
@@ -415,11 +511,11 @@ classpath:org/udea/parabank/paymentFailed.feature:29
   
 
   <div class="step-row">
-    <div class="step-container" id="0.30">
-      <div class="step-ref skipped">30</div>
+    <div class="step-container" id="0.35">
+      <div class="step-ref skipped">35</div>
       
       <div class="step-cell skipped">
-        <span>And</span>&nbsp;<span>match response contains &#39;insufficient&#39; || response contains &#39;Insufficient Funds&#39;</span>
+        <span>And</span>&nbsp;<span>match response contains &#39;insufficient&#39; || response contains &#39;insufficient funds&#39;</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
@@ -443,8 +539,8 @@ classpath:org/udea/parabank/paymentFailed.feature:29
   
 
   <div class="step-row">
-    <div class="step-container" id="0.32">
-      <div class="step-ref skipped">32</div>
+    <div class="step-container" id="0.37">
+      <div class="step-ref skipped">37</div>
       
       <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>print &#39;Status recibido:&#39;, responseStatus</span>
@@ -471,8 +567,8 @@ classpath:org/udea/parabank/paymentFailed.feature:29
   
 
   <div class="step-row">
-    <div class="step-container" id="0.33">
-      <div class="step-ref skipped">33</div>
+    <div class="step-container" id="0.38">
+      <div class="step-ref skipped">38</div>
       
       <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>print &#39;Respuesta recibida:&#39;, response</span>

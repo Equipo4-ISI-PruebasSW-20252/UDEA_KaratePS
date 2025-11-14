@@ -12,7 +12,7 @@ Feature: Request loans in ParaBank
 
 
   Scenario: Successful loan request
-    Given path 'loan'
+    Given path 'requestLoan'
     And param customerId = val_customerId
     And param amount = val_amount
     And param downPayment = val_downPayment
@@ -23,11 +23,11 @@ Feature: Request loans in ParaBank
 
   @loan_invalid
   Scenario: Loan request fails when downPayment exceeds amount
-    Given path 'loan'
+    Given path 'requestLoan'
     And param customerId = val_customerId
     And param amount = 100
     And param downPayment = 500
     And param fromAccountId = val_fromAccountId
     When method POST
     Then status 400
-    And match response contains 'Invalid loan request
+    And match response contains 'Invalid loan request'
