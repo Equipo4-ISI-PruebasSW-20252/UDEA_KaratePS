@@ -50,7 +50,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-10-30 04:58:57 p. m.</div>
+    <div>2025-11-13 08:30:49 p. m.</div>
   </div>
 </div>
 
@@ -85,7 +85,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>537</span>
+              <span>ms:</span>&nbsp;<span>956</span>
             </div>
           </div>
           <div class="step-row">
@@ -136,7 +136,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -164,7 +164,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def fakerObj = new faker()</span>
       </div>
     </div>
-    <div class="time-cell passed">17</div>
+    <div class="time-cell passed">18</div>
   </div>
 
    
@@ -220,7 +220,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def val_fromAccountId = &#39;13344&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -248,7 +248,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def val_amount = fakerObj.number().numberBetween(100, 10000)</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -276,7 +276,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def val_downPayment = fakerObj.number().numberBetween(10, 500)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -360,7 +360,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>param amount = val_amount</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -441,10 +441,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">20</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method GET</span>
+        <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">512</div>
+    <div class="time-cell passed">918</div>
   </div>
 
    
@@ -453,25 +453,25 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.20">16:58:56.281 request:
-1 &gt; GET https://parabank.parasoft.com/parabank/services/bank/loan?amount=8910&amp;fromAccountId=13344&amp;downPayment=180&amp;customerId=12212
+  <div class="preformatted" data-parent="0.20">20:30:48.190 request:
+1 &gt; POST https://parabank.parasoft.com/parabank/services/bank/loan?amount=2033&amp;fromAccountId=13344&amp;downPayment=146&amp;customerId=12212
 1 &gt; Accept: application/json
 1 &gt; Host: parabank.parasoft.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.8)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:58:56.790 response time in milliseconds: 509
+20:30:48.896 response time in milliseconds: 705
 1 &lt; 404
-1 &lt; Date: Thu, 30 Oct 2025 21:58:56 GMT
+1 &lt; Date: Fri, 14 Nov 2025 01:30:48 GMT
 1 &lt; Content-Length: 0
 1 &lt; Connection: keep-alive
 1 &lt; Server: cloudflare
 1 &lt; allow: POST,GET,OPTIONS,HEAD
 1 &lt; cf-cache-status: DYNAMIC
 1 &lt; X-Content-Type-Options: nosniff
-1 &lt; CF-RAY: 996e2d4aacce4089-MIA
+1 &lt; CF-RAY: 99e2bee5fc4dd989-MIA
 
 
 </div>   
@@ -493,7 +493,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell failed">0</div>
+    <div class="time-cell failed">2</div>
   </div>
 
    
@@ -502,9 +502,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.21">16:58:56.792 classpath:org/udea/parabank/loan.feature:21
+  <div class="preformatted" data-parent="0.21">20:30:48.900 classpath:org/udea/parabank/loan.feature:21
 Then status 200
-status code was: 404, expected: 200, response time in milliseconds: 509, url: https://parabank.parasoft.com/parabank/services/bank/loan?amount=8910&amp;fromAccountId=13344&amp;downPayment=180&amp;customerId=12212, response: 
+status code was: 404, expected: 200, response time in milliseconds: 705, url: https://parabank.parasoft.com/parabank/services/bank/loan?amount=2033&amp;fromAccountId=13344&amp;downPayment=146&amp;customerId=12212, response: 
 
 classpath:org/udea/parabank/loan.feature:21
 </div>   
@@ -555,7 +555,7 @@ classpath:org/udea/parabank/loan.feature:21
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>294</span>
+              <span>ms:</span>&nbsp;<span>976</span>
             </div>
           </div>
           <div class="step-row">
@@ -578,7 +578,7 @@ classpath:org/udea/parabank/loan.feature:21
         <span>*</span>&nbsp;<span>url baseUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -606,7 +606,7 @@ classpath:org/udea/parabank/loan.feature:21
         <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -634,7 +634,7 @@ classpath:org/udea/parabank/loan.feature:21
         <span>*</span>&nbsp;<span>def fakerObj = new faker()</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">35</div>
   </div>
 
    
@@ -662,7 +662,7 @@ classpath:org/udea/parabank/loan.feature:21
         <span>*</span>&nbsp;<span>def val_customerId = &#39;12212&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -690,7 +690,7 @@ classpath:org/udea/parabank/loan.feature:21
         <span>*</span>&nbsp;<span>def val_fromAccountId = &#39;13344&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -718,7 +718,7 @@ classpath:org/udea/parabank/loan.feature:21
         <span>*</span>&nbsp;<span>def val_amount = fakerObj.number().numberBetween(100, 10000)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -746,7 +746,7 @@ classpath:org/udea/parabank/loan.feature:21
         <span>*</span>&nbsp;<span>def val_downPayment = fakerObj.number().numberBetween(10, 500)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -802,7 +802,7 @@ classpath:org/udea/parabank/loan.feature:21
         <span>And</span>&nbsp;<span>param customerId = val_customerId</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -911,10 +911,10 @@ classpath:org/udea/parabank/loan.feature:21
       <div class="step-ref passed">31</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method GET</span>
+        <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">292</div>
+    <div class="time-cell passed">918</div>
   </div>
 
    
@@ -923,25 +923,25 @@ classpath:org/udea/parabank/loan.feature:21
 
   
 
-  <div class="preformatted" data-parent="0.31">16:58:56.808 request:
-1 &gt; GET https://parabank.parasoft.com/parabank/services/bank/loan?amount=100&amp;fromAccountId=13344&amp;downPayment=500&amp;customerId=12212
+  <div class="preformatted" data-parent="0.31">20:30:48.190 request:
+1 &gt; POST https://parabank.parasoft.com/parabank/services/bank/loan?amount=100&amp;fromAccountId=13344&amp;downPayment=500&amp;customerId=12212
 1 &gt; Accept: application/json
 1 &gt; Host: parabank.parasoft.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.8)
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:58:57.097 response time in milliseconds: 289
+20:30:48.895 response time in milliseconds: 703
 1 &lt; 404
-1 &lt; Date: Thu, 30 Oct 2025 21:58:57 GMT
+1 &lt; Date: Fri, 14 Nov 2025 01:30:48 GMT
 1 &lt; Content-Length: 0
 1 &lt; Connection: keep-alive
 1 &lt; Server: cloudflare
 1 &lt; allow: POST,GET,OPTIONS,HEAD
 1 &lt; cf-cache-status: DYNAMIC
 1 &lt; X-Content-Type-Options: nosniff
-1 &lt; CF-RAY: 996e2d4e1c82b3c2-MIA
+1 &lt; CF-RAY: 99e2bee60c469cf8-MIA
 
 
 </div>   
@@ -963,7 +963,7 @@ classpath:org/udea/parabank/loan.feature:21
         <span>Then</span>&nbsp;<span>status 400</span>
       </div>
     </div>
-    <div class="time-cell failed">0</div>
+    <div class="time-cell failed">2</div>
   </div>
 
    
@@ -972,9 +972,9 @@ classpath:org/udea/parabank/loan.feature:21
 
   
 
-  <div class="preformatted" data-parent="0.32">16:58:57.098 classpath:org/udea/parabank/loan.feature:32
+  <div class="preformatted" data-parent="0.32">20:30:48.900 classpath:org/udea/parabank/loan.feature:32
 Then status 400
-status code was: 404, expected: 400, response time in milliseconds: 289, url: https://parabank.parasoft.com/parabank/services/bank/loan?amount=100&amp;fromAccountId=13344&amp;downPayment=500&amp;customerId=12212, response: 
+status code was: 404, expected: 400, response time in milliseconds: 703, url: https://parabank.parasoft.com/parabank/services/bank/loan?amount=100&amp;fromAccountId=13344&amp;downPayment=500&amp;customerId=12212, response: 
 
 classpath:org/udea/parabank/loan.feature:32
 </div>   

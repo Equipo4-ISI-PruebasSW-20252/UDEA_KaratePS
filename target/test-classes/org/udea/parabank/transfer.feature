@@ -11,7 +11,7 @@ Feature: Transfer funds between accounts in ParaBank
     * def val_fromAccountId_error = fakerObj.number().randomNumber(5, true)
     * def val_toAccountId_error = fakerObj.number().randomNumber(5, true)
     * def negative_amount = -30
-  //* def high_amount = 10000000
+  # * def high_amount = 10000000
 
   Scenario: Successful Transfer
     Given path 'transfer'

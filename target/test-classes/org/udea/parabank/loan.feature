@@ -17,7 +17,7 @@ Feature: Request loans in ParaBank
     And param amount = val_amount
     And param downPayment = val_downPayment
     And param fromAccountId = val_fromAccountId
-    When method GET
+    When method POST
     Then status 200
     And match response contains 'loanResponse'
 
@@ -28,6 +28,6 @@ Feature: Request loans in ParaBank
     And param amount = 100
     And param downPayment = 500
     And param fromAccountId = val_fromAccountId
-    When method GET
+    When method POST
     Then status 400
     And match response contains 'Invalid loan request
